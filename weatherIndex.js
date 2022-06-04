@@ -1,19 +1,20 @@
 #!/usr/bin/env node 
-import {findArgs} from "./helpers/argsHelper.js";
+import { findArgs } from "./helpers/argsHelper.js";
+import { printError,printSuccess } from "./services/log.service.js";
 
+//All Commands and Options of ClI
+const yargsArg =  findArgs();
+yargsArg.parse(process.argv.slice(2));
 
-const initCli = () => {
-  const args = findArgs();
-  console.log(args);
-
-  if(args.s){
-
-  }
-  if(args.t){
-
-  }
-  if(args.h){
-      
-  }
+if(yargsArg.argv.s){
+  printSuccess(yargsArg.argv.s);
 }
-initCli();
+else if(yargsArg.argv.t){
+  printSuccess(yargsArg.argv.t);
+}
+else {
+  printError();
+}
+
+
+
