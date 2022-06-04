@@ -1,11 +1,14 @@
 import yargs from "yargs";
+import chalk from "chalk";
 
 const findArgs = () => {
 const y = yargs()
 y.version('1.0.0')
 
 // --- ADD OPTIONS ----
-return y.options('s', {
+return y.help('h').alias('h', 'help').epilog('copyright 2022')
+.example(chalk.bgCyan('$0 -s', '<weather in search town>'))
+.options('s', {
   alias: "search",
   required: false,  
   describe: "Weather in seatch town",
@@ -17,7 +20,6 @@ return y.options('s', {
   describe: "Saving our token",
   type: "string",
 })
-
 }
 
 
