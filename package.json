@@ -2,7 +2,11 @@
   "name": "cliforweather",
   "version": "1.0.0",
   "description": "Basic CLI to check weather",
-  "main": "index.js",
+  "main": "weatherIndex.js",
+  "bin": {
+    "weather":"weatherIndex.js"
+  },
+   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
