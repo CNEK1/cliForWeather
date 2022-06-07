@@ -1,26 +1,26 @@
 {
-  "name": "cliforweather",
-  "version": "1.0.0",
-  "description": "Basic CLI to check weather",
-  "main": "weatherIndex.js",
-  "bin": {
-    "weather": "weatherIndex.js"
-  },
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "CLI",
-    "cli",
-    "weather"
-  ],
-  "author": "Timur Kovalenko",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2",
-    "chalk": "^5.0.1",
-    "dotenv": "^16.0.1",
-    "yargs": "^17.5.1"
-  }
+    "name": "cliforweather",
+    "version": "1.0.0",
+    "description": "Basic CLI to check weather",
+    "main": "weatherIndex.js",
+    "bin": {
+        "weather": "weatherIndex.js"
+    },
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "CLI",
+        "cli",
+        "weather"
+    ],
+    "author": "Timur Kovalenko",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "chalk": "^5.0.1",
+        "dotenv": "^16.0.1",
+        "yargs": "^17.5.1"
+    }
 }

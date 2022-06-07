@@ -1,11 +1,11 @@
-import chalk from "chalk";
+import chalk from 'chalk';
 
 const printError = (error) => {
-console.log(chalk.bgRed(`ERROR: ${error}`));
+    console.log(chalk.bgRed(`ERROR: ${error}`));
 };
 
 const printSuccess = (message) => {
-  console.log(chalk.bgGreen(`SUCCESS: ${message}`))
+    console.log(chalk.bgGreen(`SUCCESS: ${message}`));
 };
 
-export {printError,printSuccess};
+export { printError, printSuccess };
