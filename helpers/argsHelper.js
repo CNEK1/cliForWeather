@@ -11,7 +11,7 @@ return y.help('h').alias('h', 'help').epilog('copyright 2022')
 .options('s', {
   alias: "search",
   required: false,  
-  describe: "Weather in seatch town",
+  describe: "Weather in search town",
   type: "string",
   nargs:1
 })
@@ -21,6 +21,13 @@ return y.help('h').alias('h', 'help').epilog('copyright 2022')
   describe: "Saving our token",
   type: "string",
   nargs: 1
+})
+.options('d', {
+  alias: "daily",
+  required: false,  
+  describe: "Daily Weather",
+  type: "string",
+  nargs:1
 })
 }
 

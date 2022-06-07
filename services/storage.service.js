@@ -4,10 +4,11 @@ import { promises } from "fs";
 
 const filePath = join(homedir(), "weatherCLI.json");
 
+
 const VALUE_DICTIONARY = {
-   token: "token",
-   city: "city"
-};
+    token: "token",
+    city: "city"
+}
 
 const saveKeyValue = async (key,value) => {
     let data = {};
