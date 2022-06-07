@@ -6,7 +6,6 @@ import { printError } from "./log.service.js";
 //API TOKEN
 
 const TOKEN = await getKeyValue(VALUE_DICTIONARY.token);
-console.log(typeof TOKEN);
 
 //Current Weather Data
 const getCurrentWeather = async (city) => {

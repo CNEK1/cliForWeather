@@ -32,8 +32,6 @@ if(yargsArg.argv.t){
 
 };
 
-console.log(process.env.TOKEN);
-
 initCli();
 
 
