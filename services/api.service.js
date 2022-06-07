@@ -30,11 +30,11 @@ const getCurrentWeather = async (city) => {
 
 // const getDailyWeather = async (city) => {
 //     try {
-//         const response = await axios.get("https://api.openweathermap.org/data/2.5/forecast/daily", {
+//         const response = await axios.get(process.env.FORECAST_API_ADDRESS, {
 //             params: {
 //                 q:city,
 //                 appid: TOKEN,
-//                 cnt: 2,
+//                 cnt: 1
 //                 lang: "en",
 //                 units: "metric"
 //             }
@@ -43,6 +43,6 @@ const getCurrentWeather = async (city) => {
 //     } catch (error) {
 //         printError(error);
 //     }
-// }
+// }; 
 
 export {getCurrentWeather}
