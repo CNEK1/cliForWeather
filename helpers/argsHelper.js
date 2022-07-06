@@ -21,14 +21,14 @@ const findArgs = () => {
         .options('t', {
             alias: 'token',
             required: false,
-            describe: 'Saving our token',
+            describe: 'Saving API token',
             type: 'string',
             nargs: 1
         })
         .options('d', {
             alias: 'daily',
             required: false,
-            describe: 'Daily Weather',
+            describe: 'Forecast for 5 days with data every 3 hours',
             type: 'string',
             nargs: 1
         });
